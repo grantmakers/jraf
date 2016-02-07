@@ -99,7 +99,7 @@
       // Lightbox gallery.
         $window.on('load', function() {
 
-          $('#two').poptrox({
+          $('#featured').poptrox({
             caption: function($a) { return $a.next('h3').text(); },
             overlayColor: '#2c2c2c',
             overlayOpacity: 0.85,
@@ -122,6 +122,41 @@
 
     // Nav scroll-to-element
       $('.scrolly').scrolly();
+
+    // Grant year navigation
+    $('#grant-select').on('change', function() {
+      var url = '/recent-grants/' + $(this).val();
+      location.href = url;
+    });
+
+    // Grant year navigation via AJAX
+    /*
+    $('#grant-select').on('change', function(e) {
+
+        var url = '/recent-grants/' + $(this).val();
+        var target = $('#grant-wrapper');
+
+        $.ajax({
+          type: 'GET',
+          url: url,
+          dataType: 'html',
+          beforeSend: function(){
+            target.fadeOut('slow');
+          },
+          success: function(data) {
+            $(target).replaceWith(function() {
+              return $(data).hide().fadeIn();
+            });
+          },
+          complete: function(){
+              target.css({opacity: 0});
+              target.fadeTo("slow", 1);
+          },
+        });
+        event.preventDefault();
+        event.stopPropagation();
+    });
+    */
 
     // Format numbers
       // Docs: https://github.com/customd/jquery-number

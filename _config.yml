@@ -1,32 +1,38 @@
 # Grantmaker settings
-foundation_name: The Example Foundation
-foundation_tagline: Advancing the adoption of open source technology among progressive funders
-email_public: hello@example.com
+foundation_name: J.R. Albert Foundation
+foundation_tagline: Promoting healthy living and wellness
+email_public: staff@jralbertfoundation.org
+grant_application_login: https://www.grantinterface.com/Common/LogOn.aspx?eqs=kw_r9STKgaXCIWXbdFWB9tE44mEel3TwmvqLoCzs9JQ1
 
 # Social media settings
 # Enter the full profile url (e.g. https://twitter.com/smartergiving)
-twitter: https://twitter.com/smartergiving
+twitter: 
 facebook: 
 instagram: 
-github: https://github.com/smartergiving
+github: 
 
 # Site settings
 # Meta tags
 title: # Default's to foundation_name if left blank
 description: > # this means to start on the next line (which needs to be indented two spaces)"
-  The Example Foundation erat sit proin magnis duis, vulputate wisi vel hac, sed justo turpis leo sit hac mauris, maecenas sem dapibus neque malesuada ante, congue arcu..
+  J. R. Albert was interested in promoting healthy living and wellness, and hoped that the growing prevalence of obesity-related diseases and their effects on quality of life could be prevented whenever possible.
+
+# Google settings
+live: false # switch to true when you're ready for the site to be indexed by Google and other web crawlers
 
 # Jekyll settings
 collections:
   featured-cards:
     output: true
-safe: true # If using Github Pages, it's a good idea to keep this as 'true'
+  recent-grants:
+    output: true
+sass:
+    sass_dir: css/_sass
 baseurl: "" # Leave this blank unless your site is located on a subpath, e.g. /blog
-url: "https://foundation-template.smartergiving.org" # Typically http://www.yourdomain.org
+url: "http://www.jralbertfoundation.org" # Typically http://www.yourdomain.org
 
 
 # Build settings
-markdown: kramdown
 exclude: 
   - README.md
   - /images/photoshop-helpers
