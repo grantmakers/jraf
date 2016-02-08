@@ -28,8 +28,8 @@ collections:
     output: true
 sass:
     sass_dir: css/_sass
-baseurl: "" # Leave this blank unless your site is located on a subpath, e.g. /blog
-url: "http://www.jralbertfoundation.org" # Typically http://www.yourdomain.org
+baseurl: "/jraf" # Leave this blank unless your site is located on a subpath, e.g. /blog
+url: "http://grantmakers.github.io/" # Typically http://www.yourdomain.org
 
 
 # Build settings
