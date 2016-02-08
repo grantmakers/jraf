@@ -29,7 +29,7 @@ collections:
 sass:
     sass_dir: css/_sass
 baseurl: "/jraf" # Leave this blank unless your site is located on a subpath, e.g. /blog
-url: "http://grantmakers.github.io/" # Typically http://www.yourdomain.org
+url: "http://grantmakers.github.io" # Typically http://www.yourdomain.org
 
 
 # Build settings

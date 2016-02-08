@@ -11,7 +11,7 @@
         {% if match1 == match2 %}
           <li><span class="button small button-fit special">{{each[0]}}</span></li>
         {% else %}
-          <li><a href="/recent-grants/{{each[0]}}" class="button small button-fit">{{each[0]}}</a></li>
+          <li><a href="{{ site.baseurl }}/recent-grants/{{each[0]}}" class="button small button-fit">{{each[0]}}</a></li>
         {% endif %}
     {% endfor %}
   </ul>
@@ -50,7 +50,7 @@
           <tr>
             <td>
               {% if grant.grantee_url %}
-                <a target="_blank" href="{{ grant.grantee_url}}">{{ grant.grantee_name}}</a>
+                <a target="_blank" href="{{ site.baseurl }}/{{ grant.grantee_url}}">{{ grant.grantee_name}}</a>
               {% else %}
                 {{ grant.grantee_name}}
               {% endif %}
